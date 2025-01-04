@@ -92,7 +92,7 @@ export default function App() {
           }
           />
           <Route
-          path="/reset-password/:token"
+          path="/#/reset-password/:token"
           element={
             <RedirectAuthenticatedUser>
               <ResetPasswordPage />
