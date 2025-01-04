@@ -1,0 +1,48 @@
+----------------> Backend <----------------
+🔧 Backend Setup
+🗄️ Database Setup
+🔐 Signup Endpoint
+📧 Sending Verify Account Email
+🔍 Verify Email Endpoint
+📄 Building a Welcome Email Template
+🚪 Logout Endpoint
+🔑 Login Endpoint
+🔄 Forgot Password Endpoint
+🔁 Reset Password Endpoint
+✔️ Check Auth Endpoint
+----------------> Frontend <-----------------
+🌐 Frontend Setup
+📋 Signup Page UI
+🔓 Login Page UI
+✅ Email Verification Page UI
+📤 Implementing Signup
+📧 Implementing Email Verification
+🔒 Protecting Our Routes
+🔑 Implementing Login
+🏠 Dashboard Page
+🔄 Implementing Forgot Password
+🚀 Super Detailed Deployment
+
+--------------------------> Packages used <----------------
+--> server side
+1. npm i express
+2. npm i mongoose
+3. npm i cookie-parser
+4. npm i mailtrap
+5. npm i bcryptjs
+6. npm crypto
+7. npm i jsonwebtoken
+8. npm i dotenv
+9. npm i cors
+
+steps:
+-> npm init -y
+-> npm i express mongoose cookie-parser mailtrap bcryptjs crypto jsonwebtoken dotenv cors
+
+--> client side
+1. npm i react-router-dom
+2. npm i framer-motion
+3. npm i lucide-react
+4. npm i zustand
+5. npm i axios
+6. npm i react-toastify
