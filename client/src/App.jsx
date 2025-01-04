@@ -14,15 +14,18 @@ import { useEffect } from "react";
 
 // protect route that require authentication
 const ProtectedRoute = ({ children }) => {
-  const {isAuthenticated,user} = useAuthStore();
-  if(!isAuthenticated){
-    return <Navigate to="/login" replace/>
-  }
-  if(!user.isVerified){
-    return <Navigate to="/verify-email" replace/>
-  }
-  return children;
-}
+	const { isAuthenticated, user } = useAuthStore();
+
+	if (!isAuthenticated) {
+		return <Navigate to='/login' replace />;
+	}
+
+	if (!user.isVerified) {
+		return <Navigate to='/verify-email' replace />;
+	}
+
+	return children;
+};
 
 // redirect authenticated users to the home page 
 // make the routes protected from users to navigate to other routes
@@ -40,7 +43,7 @@ export default function App() {
   }, [checkAuth]);
   if (isCheckingAuth) {
     return <LoadingSpinner/>
-  }
+  } 
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-emerald-900 flex items-center justify-center relative overflow-hidden">
@@ -75,9 +78,9 @@ export default function App() {
           <Route 
           path="/verify-email" 
           element={
-            <ProtectedRoute>
+            <>
               <EmailVerificationPage />
-            </ProtectedRoute>
+            </>
             } 
           />
           <Route

@@ -13,7 +13,7 @@ const sendVerificationEmail = async(email, verificationToken,expirationTime)=>{
         console.log("Email sent successfully",response);
     } catch (error) {
         console.log("Verfication Code Mailtrap Error:",error.message);
-    }
+    } 
 } 
 const sendWelcomeEmail = async(email,user)=>{
     const recipients = [{email}]

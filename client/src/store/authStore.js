@@ -2,7 +2,7 @@
 // global state management
 import {create} from "zustand"
 import axios from "axios"
-const API_URL = "https://advance-mern-authentication-server.onrender.com/api/auth";
+const API_URL = "http://localhost:5001/api/auth";
 
 axios.defaults.withCredentials = true;
 export const useAuthStore = create((set)=>({
@@ -53,16 +53,15 @@ export const useAuthStore = create((set)=>({
             throw error;
         }
     },
-    checkAuth: async()=>{
-        // await new Promise(resolve => setTimeout(resolve, 2000));
-        set({isCheckingAuth:true,error:null});
-        try {
-            const response = await axios.get(`${API_URL}/check-auth`);
-            set({user:response.data.user,isAuthenticated:true, isCheckingAuth:false});
-        } catch (error) {
-            set({error:null,isCheckingAuth:false,isAuthenticated:false});
-        }
-    },
+    checkAuth: async () => {
+		set({ isCheckingAuth: true, error: null });
+		try {
+			const response = await axios.get(`${API_URL}/check-auth`);
+			set({ user: response.data.user, isAuthenticated: true, isCheckingAuth: false });
+		} catch (error) {
+			set({ error: null, isCheckingAuth: false, isAuthenticated: false });
+		}
+	},
     Logout: async()=>{
         set({isLoading: true, error:null})
         try {
