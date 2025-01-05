@@ -11,17 +11,11 @@ const LoginPage = () => {
   const {login, isLoading,error}=useAuthStore();
   const handleLogin = async(e)=>{
     e.preventDefault()
-    try {
-      await login(email,password);
-      SuccessMessage("Login Successful")
-    } catch (e) {
-      if(e){
-          ErrorMessage(error);
-      }
+    await login(email,password);
+    SuccessMessage("Login Successful")
+    if(error){
+      ErrorMessage(error);
     }
-    // if(error){
-    //   ErrorMessage(error);
-    // }
     
   }
   return (
