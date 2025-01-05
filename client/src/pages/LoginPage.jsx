@@ -4,13 +4,20 @@ import {motion} from "framer-motion"
 import { Input } from "../components"
 import {Link} from "react-router-dom"
 import { useAuthStore } from "../store/authStore"
+import { SuccessMessage,ErrorMessage } from "../toastify/success&Fail"
 const LoginPage = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const {login, isLoading,error}=useAuthStore();
   const handleLogin = async(e)=>{
     e.preventDefault()
-    await login(email,password);
+    try {
+      await login(email,password);
+      SuccessMessage("Login Successful")
+    } catch (error) {
+      ErrorMessage(error);
+    }
+    
   }
   return (
     <motion.div

@@ -1,10 +1,12 @@
 import {motion} from "framer-motion"
 import { useAuthStore } from "../store/authStore"
 import { formatDate } from "../utils/date";
+import { SuccessMessage } from "../toastify/success&Fail";
 const Home = () => {
   const {user,Logout} = useAuthStore();
   const handleLogout = ()=>{
     Logout();
+    SuccessMessage("Logged out successfully")
   }
   return (
     <motion.div

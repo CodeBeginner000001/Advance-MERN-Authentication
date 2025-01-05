@@ -4,6 +4,7 @@ import { useAuthStore } from "../store/authStore";
 import { Input } from "../components";
 import { Mail,Loader, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SuccessMessage,ErrorMessage } from "../toastify/success&Fail";
 const ForgetPasswordPage = () => {
     const [email,setEmail] = useState("");
     const [isSubmitted,setIsSubmitted] = useState(false);
@@ -11,8 +12,14 @@ const ForgetPasswordPage = () => {
     const {isLoading,forgetPassword} = useAuthStore();
     const handleSubmit = async(e)=>{
         e.preventDefault();
+       try {
         await forgetPassword(email);
         setIsSubmitted(true);
+        SuccessMessage("Email sent successfully");
+       } catch (error) {
+        ErrorMessage(error);
+       }
+
     }
 
   return (

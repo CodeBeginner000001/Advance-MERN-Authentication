@@ -4,7 +4,7 @@ import { Input } from "../components"
 import { useAuthStore } from "../store/authStore";
 import { useNavigate, useParams } from "react-router-dom";
 import { Lock} from "lucide-react";
-
+import {ErrorMessage,SuccessMessage} from "../toastify/success&Fail"
 const ResetPasswordPage = () => {
     const [password,setPassword] = useState("");
     const [confirmPassword,setConfirmPassword] = useState("");
@@ -17,17 +17,17 @@ const ResetPasswordPage = () => {
         e.preventDefault();
         if(password !== confirmPassword)
         {
-            alert("Password do not match");
+            ErrorMessage("Password do not match");
             return;
         }
         try {
         await resetPassword(token, password);
-        alert("password reset successfully")
+        SuccessMessage("password reset successfully")
         setTimeout(()=>{
             navigate("/login");
         },2000);
         } catch (error) {
-            alert(error.message || "Error resetting password");
+            ErrorMessage(error.message || "Error resetting password");
         }
     }
   return (

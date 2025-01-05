@@ -4,6 +4,7 @@ import { Input,PasswordStrengthMeter } from "../components"
 import {User,Mail,Lock,Loader} from "lucide-react"
 import { Link, useNavigate } from "react-router-dom"
 import { useAuthStore } from "../store/authStore"
+import {ErrorMessage} from "../toastify/success&Fail"
 const SignupPage = () => {
     const [name,setName] = useState("")
     const [email,setEmail] = useState("")
@@ -15,8 +16,10 @@ const SignupPage = () => {
       try {
         await signup(email,password,name);
         navigate("/verify-email")
-      } catch (error) {
-        console.log(error);
+      } catch (e) {
+        if(e){
+          ErrorMessage("User already exists")
+        }
       }
     }
   return (
