@@ -11,11 +11,19 @@ const LoginPage = () => {
   const {login, isLoading,error}=useAuthStore();
   const handleLogin = async(e)=>{
     e.preventDefault()
-    await login(email,password);
-    SuccessMessage("Login Successful")
-    if(error){
-      ErrorMessage("Invalid Credentials");
+    try {
+      await login(email,password);
+      SuccessMessage("Login Successful")
+    } catch (error)
+    {
+      if(error)
+      {
+        ErrorMessage("Invalid Credentials");
+      }
     }
+    // if(error){
+    //   ErrorMessage("Invalid Credentials");
+    // }
     
   }
   return (
