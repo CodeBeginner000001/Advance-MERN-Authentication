@@ -92,7 +92,7 @@ export default function App() {
           }
           />
           <Route
-          path="https://advance-mern-authentication-jcuz.onrender.com/#/reset-password/:token"
+          path="/reset-password/:token"
           element={
             <RedirectAuthenticatedUser>
               <ResetPasswordPage />
