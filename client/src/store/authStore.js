@@ -2,7 +2,7 @@
 // global state management
 import {create} from "zustand"
 import axios from "axios"
-const API_URL = "https://advance-mern-authentication.onrender.com/api/auth";
+const API_URL = "https://advance-mern-authentication-server.onrender.com/api/auth";
 
 axios.defaults.withCredentials = true;
 export const useAuthStore = create((set)=>({
