@@ -11,7 +11,7 @@ const ResetPasswordPage = () => {
     const {resetPassword,error,isLoading,message} = useAuthStore();
 
     const {token} = useParams();
-    console.log(token);
+    // console.log(token);
     const navigate = useNavigate();
     const handleSubmit = async(e)=>{
         e.preventDefault();

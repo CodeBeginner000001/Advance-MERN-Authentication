@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
