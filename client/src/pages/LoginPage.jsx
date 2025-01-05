@@ -16,7 +16,7 @@ const LoginPage = () => {
       SuccessMessage("Login Successful")
     } catch (e)
     {
-      if(e)
+      if(e && error)
       {
         ErrorMessage("Invalid Credentials");
       }
