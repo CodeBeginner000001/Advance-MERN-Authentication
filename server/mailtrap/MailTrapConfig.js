@@ -8,7 +8,7 @@ const client = new MailtrapClient({
 
 // console.log(process.env.MAILTRAP_TOKEN);
 const sender = {
-  email: "hello@codebeginner000001.wuaze.com",
+  email: "hello@demomailtrap.com",
   name: "CodeBeginner000001",
 };
 
