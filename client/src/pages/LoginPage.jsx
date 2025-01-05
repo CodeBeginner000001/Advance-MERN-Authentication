@@ -14,7 +14,7 @@ const LoginPage = () => {
     await login(email,password);
     SuccessMessage("Login Successful")
     if(error){
-      ErrorMessage(error);
+      ErrorMessage("Invalid Credentials");
     }
     
   }

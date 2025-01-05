@@ -34,7 +34,7 @@ export const useAuthStore = create((set)=>({
                 isLoading: false,
             });
         } catch (error) {
-            const errorMessage = error.response?.data?.message || "An unexpected error occurred. Please try again.";
+            const errorMessage = "Invalid Credentials";
             set({
                 error: errorMessage, // Set only the error message (string)
                 isLoading: false
