@@ -15,12 +15,13 @@ const LoginPage = () => {
       await login(email,password);
       SuccessMessage("Login Successful")
     } catch (e) {
-      if(e)
-        ErrorMessage(e.message)
+      if(e){
+          ErrorMessage(error);
+      }
     }
-    if(error){
-      ErrorMessage(error);
-    }
+    // if(error){
+    //   ErrorMessage(error);
+    // }
     
   }
   return (
