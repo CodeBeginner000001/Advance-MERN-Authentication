@@ -3,7 +3,7 @@ import { Loader } from "lucide-react";
 import {motion} from "framer-motion"
 import { useAuthStore } from "../store/authStore";
 import { useNavigate } from "react-router-dom";
-import {SuccessMessage} from "../toastify/success&Fail.js" // import the toastify success js file
+import {ErrorMessage, SuccessMessage} from "../toastify/success&Fail.js" // import the toastify success js file
 const EmailVerificationPage = () => {
     // setting the code from the user in the array
     const [code,setCode] = useState(["","","","","",""]);
@@ -47,10 +47,12 @@ const EmailVerificationPage = () => {
         // console.log(`verification code submitted: ${verificationCode}`); // log the verification code
         try{
             await verifyEmail(verificationCode); // verify the email with the verification code
-            navigate("/")
             SuccessMessage("Email verified successfully") // show the success message
+            navigate("/")
         }catch(e){
-            console.log(e); // log the error
+            if(e){
+                ErrorMessage("Invalid verification code") // show the fail message
+            }
         }
     }
     // auto submit when all feilds are filled
