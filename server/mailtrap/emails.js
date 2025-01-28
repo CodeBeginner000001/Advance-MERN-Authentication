@@ -1,5 +1,6 @@
-const { VERIFICATION_EMAIL_TEMPLATE, PASSWORD_RESET_REQUEST_TEMPLATE, PASSWORD_RESET_SUCCESS_TEMPLATE } = require("./emailTemplates.js");
+const { VERIFICATION_EMAIL_TEMPLATE, PASSWORD_RESET_REQUEST_TEMPLATE, PASSWORD_RESET_SUCCESS_TEMPLATE, Welcome_Email } = require("./emailTemplates.js");
 const { client, sender } = require("./MailTrapConfig.js"); 
+const src1 = ""
 const sendVerificationEmail = async(email, verificationToken,expirationTime)=>{
     const recipient = [{email}] 
     try {
@@ -21,11 +22,16 @@ const sendWelcomeEmail = async(email,user)=>{
         const response = await client.send({
             from: sender,
             to: recipients,
-            template_uuid: "3f2caa9f-79fa-4b29-b4c9-423929287e1d",
-            template_variables: {
-                "company_info_name": "CodeBeginner000001",
-                "name": user
-             }
+            subject: "Welcome Email",
+            html: Welcome_Email.replace("{company_info_name}","CodeBeginner000001")
+                               .replace("{company_info_name}","CodeBeginner000001")
+                               .replace("{company_info_name}","CodeBeginner000001")
+                               .replace("{name}",user)
+                               .replace("{started1}","Getting Started with protfolio")
+                               .replace("{started1}","Getting Started with protfolio")
+                               .replace("{started2}","Cryptoverse")
+                               .replace("{started2}","Cryptoverse"),
+            category: "Welcome Email"
         })
         console.log("Email sent successfully",response);
     } catch (error) {

@@ -93,4 +93,123 @@ const PASSWORD_RESET_REQUEST_TEMPLATE = `
 </body>
 </html>
 `;
-module.exports = {VERIFICATION_EMAIL_TEMPLATE,PASSWORD_RESET_SUCCESS_TEMPLATE,PASSWORD_RESET_REQUEST_TEMPLATE}
+const Welcome_Email = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Email</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+    }
+    .header h1 {
+      color: #333333;
+      margin: 0;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      color: #000000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 150px;
+      margin: 20px 10px;
+      background-color: #007BFF;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .links {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .links-item {
+      background-color: #ffe4e1;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .links-item img {
+      width: 80px;
+      height: auto;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+    .links-item p {
+      margin: 0;
+      font-weight: bold;
+    }
+    .footer {
+      padding: 10px 0 ;
+      text-align: center;
+      margin-top: 20px;
+      color: #888;
+      background-color: #f1f1f1;
+      font-size: 0.8em;
+    }
+    .imageheight{
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>{company_info_name}</h1>
+    </div>
+    <div class="content">
+      <p>Welcome, {name} !</p>
+      <p>Thanks for choosing {company_info_name}! We are happy to see you on board.</p>
+      <div style="text-align: center; margin: 10px 0;">
+      <a href="#" class="button"> 
+      <span style="color: black;">Next Step</span>
+      </a>
+    </div>
+      <p>If you need some help to get started, check our:</p>
+      <div class="links">
+        <div class="links-item">
+          <img class="imageheight" src="{img1}" alt="{started1}">
+          <p>{started1}</p>
+        </div>
+        <div class="links-item">
+          <img class="imageheight" src="{img2}" alt="{started2}">
+          <p>{started2}</p>
+        </div>
+      </div>
+      <p>We hope you enjoy this journey as much as we enjoy creating it for you.</p>
+    </div>
+    <div class="footer">
+      <p>© {company_info_name} • Online • New Delhi, 110023, India</p>
+      <a href="#">Unsubscribe</a>
+    </div>
+  </div>
+</body>
+</html>
+`
+module.exports = {VERIFICATION_EMAIL_TEMPLATE,PASSWORD_RESET_SUCCESS_TEMPLATE,PASSWORD_RESET_REQUEST_TEMPLATE,Welcome_Email}
