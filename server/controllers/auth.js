@@ -3,7 +3,7 @@ const User = require("../models/user")
 const bcryptjs = require("bcryptjs")
 const crypto = require("crypto")
 const generateTokenAndSetCookie = require("../utils/generateTokenAndSetCookie")
-const {sendVerificationEmail,sendWelcomeEmail,sendPasswordResetEmail,sendResetSuccessfulEmail} = require("../mailtrap/emails.js")
+const {sendVerificationEmail,sendWelcomeEmail,sendPasswordResetEmail,sendResetSuccessfulEmail} = require("../Nodemailer/emails.js")
 
 const signup = async(req,res)=>{ // user SignUp
     const {email,password,name} = req.body; // destructuring the request body

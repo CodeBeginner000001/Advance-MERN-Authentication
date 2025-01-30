@@ -118,8 +118,8 @@ const Welcome_Email = `
       text-align: center;
       padding: 10px;
     }
-    .header h1 {
-      color: #333333;
+    .header h2 {
+      color: #000000;
       margin: 0;
     }
     .content {
@@ -147,13 +147,12 @@ const Welcome_Email = `
       background-color: #fff;
       padding: 15px;
       border-radius: 5px;
-      margin-top: 20px;
+      margin-top: 5px;
     }
     .links-item {
       background-color: #ffe4e1;
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      cursor: pointer;
     }
     .links-item img {
       width: 80px;
@@ -161,45 +160,55 @@ const Welcome_Email = `
       margin-right: 15px;
       border-radius: 5px;
     }
-    .links-item p {
+    .links-item span {
       margin: 0;
       font-weight: bold;
     }
     .footer {
       padding: 10px 0 ;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 10px;
       color: #888;
       background-color: #f1f1f1;
       font-size: 0.8em;
     }
     .imageheight{
-      height: 100px;
+      display: inline-block;
+      padding: 10px 10px;
+      height: 200px;
+    }
+    .imageLink{
+      display:flex;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <h2>{company_info_name}</h1>
+      <h2>{company_info_name}</h2>
     </div>
     <div class="content">
       <p>Welcome, {name} !</p>
       <p>Thanks for choosing {company_info_name}! We are happy to see you on board.</p>
       <div style="text-align: center; margin: 10px 0;">
-      <a href="#" class="button"> 
+      <a href={buttonlink} class="button"> 
       <span style="color: black;">Next Step</span>
       </a>
     </div>
       <p>If you need some help to get started, check our:</p>
       <div class="links">
         <div class="links-item">
-          <img class="imageheight" src="{img1}" alt="{started1}">
-          <p>{started1}</p>
+          <a class="imageLink" href={link1}>
+          <img class="imageheight" src={img1} alt="{started1}">
+          <span style="color: #000000;padding: 20px 0;">{started1}</span>
+          </a>
         </div>
         <div class="links-item">
-          <img class="imageheight" src="{img2}" alt="{started2}">
-          <p>{started2}</p>
+          <a class="imageLink" href={link2}>
+          <img class="imageheight" src={img2} alt="{started2}">
+          <span style="color: #000000;padding: 20px 0;">{started2}</span>
+          </a>
         </div>
       </div>
       <p>We hope you enjoy this journey as much as we enjoy creating it for you.</p>
