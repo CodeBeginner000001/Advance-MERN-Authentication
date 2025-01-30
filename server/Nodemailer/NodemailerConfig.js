@@ -7,14 +7,14 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "ashu2100ag@gmail.com",
-    pass: "zzvb oyvc cafa ywix", // Use an app password or OAuth2
+    user: process.env.GMAIL,
+    pass: process.env.PASS, // Use an app password or OAuth2
   },
 });
 
 // console.log(process.env.MAILTRAP_TOKEN);
 const sender = {
-  email: "ashu2100ag@gmail.com",
+  email: process.env.GMAIL,
   name: "CodeBeginner000001",
 };
 
