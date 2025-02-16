@@ -130,7 +130,13 @@ src/
 ```
 
 ---
+### Screenshots
+- **Login Page**
+  <p align = "center">
+  <img width="453" alt="Screenshot 2025-02-13 at 5 29 55 PM"    src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
 
+  </p>
+---  
 ## 🚀 Deployment
 - Deployed on **Render**
 - Live Project: [Advanced MERN Authentication](https://advance-mern-authentication-vqqq.onrender.com)
