@@ -1,6 +1,6 @@
 # Advanced MERN Authentication System
 <p align = 'center'>
-<img src = "https://github.com/user-attachments/assets/b3002a70-81e7-4f76-a1a6-cafe872685fa"/>
+<img src = "https://github.com/user-attachments/assets/b3002a70-81e7-4f76-a1a6-cafe872685fa" height="200"/>
 </p>
 A simple yet powerful authentication system using the MERN stack. Users receive a verification code via email upon signing up. After verifying, they are directed to the dashboard with a welcome email. Features include login, email verification, password reset, and protected routes.
 
