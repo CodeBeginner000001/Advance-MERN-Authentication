@@ -132,13 +132,13 @@ src/
 ---
 ### Screenshots
 - **Login Page**
-<p align = "center">
+<span align = "left">
 <img width="353" alt="Screenshot 2025-02-13 at 5 29 55 PM"    src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
-<p>
-<div>Login page</div>
+</span>
+<span align = "right">
 <img width="353" alt="Screenshot 2025-02-13 at 5 29 55 PM"    src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
-</p>
-</p>
+</span>
+
 
 ---
 ## 🚀 Deployment
