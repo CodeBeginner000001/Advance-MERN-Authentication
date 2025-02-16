@@ -138,6 +138,7 @@ src/
 <span>
 <img width="353" alt="Screenshot 2025-02-13 at 5 30 08 PM" src="https://github.com/user-attachments/assets/2d4e403b-fa3d-4414-961f-4c877e85daa1" />
 </span>
+
 ---
 - **Verify your email & Dashboard**
 <span align = "center">
@@ -146,6 +147,7 @@ src/
 <span align = "center">
 <img width="498" alt="Screenshot 2025-02-13 at 5 31 30 PM" src="https://github.com/user-attachments/assets/18f6ca37-7df8-471f-8c5d-731221ae6a5d" />
 </span>
+
 ---
 - **Forget Password**
 <span align="center">
@@ -154,11 +156,13 @@ src/
 <span align="center">
 <img width="1118" alt="Screenshot 2025-02-13 at 5 32 24 PM" src="https://github.com/user-attachments/assets/7671a4eb-6ae7-4344-89d3-aa88743fc57c" />
 </span>
+
 ---
 - **Reset Password**
 <span align="center">
 <img width="477" alt="Screenshot 2025-02-13 at 5 32 47 PM" src="https://github.com/user-attachments/assets/efd17a03-1df4-4264-bde9-acef31d4e84f" />
 </span>
+
 ---
 - **Verification Code & Welcome Emails**
 <span align="center">
@@ -167,6 +171,7 @@ src/
 <span align="center">
 <img width="629" alt="Screenshot 2025-02-13 at 5 32 00 PM" src="https://github.com/user-attachments/assets/64a2d3a3-ec9f-4618-99c4-64339b1dddf7" />
 </span>
+
 ---
 - **Password Reset & Successful Email**
 <span align="center">
@@ -175,6 +180,7 @@ src/
 <span align="center">
 <img width="619" alt="Screenshot 2025-02-13 at 5 33 15 PM" src="https://github.com/user-attachments/assets/8b32515e-33d6-43b6-9b69-2a38a01a41f6" />
 </span>
+
 ---
 ## 🚀 Deployment
 - Deployed on **Render**
