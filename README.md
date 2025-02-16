@@ -141,49 +141,53 @@ src/
 
 ---
 - **Verify your email**
-<span align = "center">
+<p align = "center">
 <img width="498" alt="Screenshot 2025-02-13 at 5 31 09 PM" src="https://github.com/user-attachments/assets/cca042e8-910a-4a99-ab4c-e1f5a5ffef07" />
-</span>
+</p>
+
 - **Dashboard**
-<span align = "center">
+<p align = "center">
 <img width="498" alt="Screenshot 2025-02-13 at 5 31 30 PM" src="https://github.com/user-attachments/assets/18f6ca37-7df8-471f-8c5d-731221ae6a5d" />
-</span>
+</p>
 
 ---
 - **Forget Password**
-<span align="center">
+<p align="center">
 <img width="495" alt="Screenshot 2025-02-13 at 5 32 11 PM" src="https://github.com/user-attachments/assets/85251b9d-ac88-4f60-a1e7-fc2716ca261f" />
-</span>
+</p>
+
 - **Forget Password Reset Link**
-<span align="center">
+<p align="center">
 <img width="1118" alt="Screenshot 2025-02-13 at 5 32 24 PM" src="https://github.com/user-attachments/assets/7671a4eb-6ae7-4344-89d3-aa88743fc57c" />
-</span>
+</p>
 
 ---
 - **Reset Password**
-<span align="center">
+<p align="center">
 <img width="477" alt="Screenshot 2025-02-13 at 5 32 47 PM" src="https://github.com/user-attachments/assets/efd17a03-1df4-4264-bde9-acef31d4e84f" />
-</span>
+</p>
 
 ---
 - **Verification Code Email**
-<span align="center">
+<p align="center">
 <img width="614" alt="Screenshot 2025-02-13 at 5 31 47 PM" src="https://github.com/user-attachments/assets/3f2e7147-1d02-4298-a951-9cf2debebaa0" />
-</span>
+</p>
+
 - **Welcome Email**
-<span align="center">
+<p align="center">
 <img width="629" alt="Screenshot 2025-02-13 at 5 32 00 PM" src="https://github.com/user-attachments/assets/64a2d3a3-ec9f-4618-99c4-64339b1dddf7" />
-</span>
+</p>
 
 ---
 - **Password Reset Email**
-<span align="center">
+<p align="center">
 <img width="608" alt="Screenshot 2025-02-13 at 5 32 40 PM" src="https://github.com/user-attachments/assets/37d29f10-e037-4f4e-9578-6ca00d566936" />
-</span>
+</p>
+
 - **Reset Password Successful Email**
-<span align="center">
+<p align="center">
 <img width="619" alt="Screenshot 2025-02-13 at 5 33 15 PM" src="https://github.com/user-attachments/assets/8b32515e-33d6-43b6-9b69-2a38a01a41f6" />
-</span>
+</p>
 
 ---
 ## 🚀 Deployment
