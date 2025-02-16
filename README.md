@@ -1,6 +1,7 @@
 # Advanced MERN Authentication System
-https://github.com/CodeBeginner000001/Advance-MERN-Authentication/blob/macbook/client/public/logo.png?raw=true![image](https://github.com/user-attachments/assets/a47f3dad-71ff-4987-bfdd-cdb96a4b5dee)
-
+<p align = 'center'>
+<img src = "https://github.com/user-attachments/assets/b3002a70-81e7-4f76-a1a6-cafe872685fa"/>
+</p>
 A simple yet powerful authentication system using the MERN stack. Users receive a verification code via email upon signing up. After verifying, they are directed to the dashboard with a welcome email. Features include login, email verification, password reset, and protected routes.
 
 ## 📑 Table of Contents
