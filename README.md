@@ -131,17 +131,11 @@ src/
 
 ---
 ### Screenshots
-- **Login Page**
-<span align = "left">
-<p>Login</p>
-<img width="353" alt="Screenshot 2025-02-13 at 5 29 55 PM"    src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
+- **Login Page & SignUp**
+<span align = "center">
+<img width="353" alt="Screenshot 2025-02-13 at 5 29 55 PM" src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
+<img width="353" alt="Screenshot 2025-02-13 at 5 30 08 PM" src="https://github.com/user-attachments/assets/2d4e403b-fa3d-4414-961f-4c877e85daa1" />
 </span>
-<span align = "right">
-<p>SignUp</p>  
-<img width="353" alt="Screenshot 2025-02-13 at 5 29 55 PM"    src="https://github.com/user-attachments/assets/ad1878a3-1506-400b-b3b3-a802d3177b58" />
-</span>
-
-
 ---
 ## 🚀 Deployment
 - Deployed on **Render**
