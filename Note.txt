@@ -29,7 +29,7 @@
 3. npm i cookie-parser
 4. npm i nodemailer
 5. npm i bcryptjs
-6. npm crypto
+6. npm i crypto
 7. npm i jsonwebtoken
 8. npm i dotenv
 9. npm i cors
