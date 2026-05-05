@@ -1,4 +1,5 @@
 const express = require("express")
+const path = require("path")
 const dotenv = require("dotenv")
 const connectDB = require("./db/connectDB.js")
 const authRoutes = require("./routes/authRoutes.js")
@@ -24,7 +25,7 @@ app.use(cors({
 }));
 app.use(express.json()); // allows us to parse incoming requests:req.body
 app.use(cookieParser());
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/",(req,res)=>{
     res.send(`<!DOCTYPE html>
