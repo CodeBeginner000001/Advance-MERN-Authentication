@@ -30,8 +30,9 @@ app.get("/",(req,res)=>{
 })
 app.use("/api/auth",authRoutes)
 
-app.listen(port,()=>{
-    connectDB();
-    console.log(`Server is running on port ${port}`);
-})
+connectDB().then(()=>{
+    app.listen(port,()=>{
+        console.log(`Server is running on port ${port}`);
+    });
+});
  
