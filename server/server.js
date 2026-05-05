@@ -8,7 +8,20 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5002;
 
-app.use(cors({origin:process.env.CLIENT_URL, credentials:true}));
+app.use(cors({
+  origin: (origin, callback) => {
+    const allowed = [
+      process.env.CLIENT_URL,
+      /^https:\/\/advance-mern-authentication.*\.vercel\.app$/,
+    ];
+    if (!origin || allowed.some(p => typeof p === 'string' ? p === origin : p.test(origin))) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json()); // allows us to parse incoming requests:req.body
 app.use(cookieParser());
 
