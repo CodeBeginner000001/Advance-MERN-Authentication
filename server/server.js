@@ -24,9 +24,25 @@ app.use(cors({
 }));
 app.use(express.json()); // allows us to parse incoming requests:req.body
 app.use(cookieParser());
+app.use(express.static(__dirname));
 
 app.get("/",(req,res)=>{
-    res.send("hello world");
+    res.send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advance MERN Authentication Server</title>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+</head>
+<body style="margin:0;display:flex;align-items:center;justify-content:center;height:100vh;background:#0f172a;font-family:sans-serif;">
+  <div style="text-align:center;color:#f8fafc;">
+    <img src="/favicon.png" width="72" style="margin-bottom:16px;"/>
+    <h1 style="font-size:2rem;margin:0 0 8px;">Server is Running</h1>
+    <p style="color:#94a3b8;margin:0;">Advance MERN Authentication Server</p>
+  </div>
+</body>
+</html>`);
 })
 app.use("/api/auth",authRoutes)
 
